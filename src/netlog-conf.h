@@ -11,7 +11,9 @@
 #include "conf-parser.h"
 #include "netlog-manager.h"
 
-const struct ConfigPerfItem* netlog_gperf_lookup(const char *key, size_t length);
+
+
+const struct ConfigPerfItem* netlog_gperf_lookup (register const char *str, register unsigned int len);
 int config_parse_netlog_remote_address(const char *unit,
                                        const char *filename,
                                        unsigned line,
