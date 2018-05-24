@@ -7,7 +7,7 @@ project('systemd-netlogd', 'c',
                 'sysconfdir=/etc/systemd/system',
                 'localstatedir=/var',
         ],
-        meson_version : '>= 0.40')
+        meson_version : '>= 0.37')
 
 conf = configuration_data()
 conf.set_quoted('PACKAGE_VERSION', meson.project_version())
